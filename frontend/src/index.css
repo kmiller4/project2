@@ -1,13 +1,257 @@
 #gameCanvas {
-  margin-top: 4em;
-  text-align: center;
+  margin-top: 1em;
+  box-shadow: 14px -9px 5px 0px rgba(23,17,23,1);
+  border-radius: 4%;
+  
 }
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url(''), radial-gradient(ellipse at center, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+  background-repeat: no-repeat, repeat;
+  background-position-x: 25%, 100%;
+  background-position-y: 100%;
+  background-size: 50% 80%, cover;
+  background-color: #808080;
+}
+
+.eraseButton {
+  box-shadow: 7px -6px 5px 0px rgba(28,26,28,1);
+  margin-left: .2em;
+  height: 1.7em;
+}
+
+#canvasComponentContainer {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+#main-content-container {
+  height: 100%;
+  width: 100%;
+}
+
+.refImage {
+  border-radius: 4%;
+  box-shadow: 14px -9px 5px 0px rgba(23,17,23,1);
+  margin-top: 2em;
+  height: 300px;
+  width: 300px;
+}
+
+.gameTimer {
+  text-shadow: 2px -3px 3px rgb(8, 8, 8);
+  color: #f8f9fa;
+}
+
+.resultImage{
+  height: 300px;
+  width: 300px;
+}
+
+.winnerContainer {
+  margin-left: 2em;
+  display: inline-block;
+  width: 70%;
+}
+
+.resultsContainer {
+  margin-left: 2em;
+  display: inline-block;
+  width: 70%;
+}
+
+.infoList {
+  text-shadow: 2px -3px 3px rgb(8, 8, 8);
+  font-size: 170%;
+  margin-bottom: .5em;
+}
+
+.infoListContainer {
+  margin: auto;
+}
+
+.goToGameButton {
+  box-shadow: 7px -6px 5px 0px rgba(28,26,28,1);
+  margin-right: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: 37%;
+}
+
+.signInHomeButton {
+  box-shadow: 7px -6px 5px 0px rgba(28,26,28,1);
+}
+
+.welcomeMessage {
+  text-shadow: 2px -3px 3px rgb(8, 8, 8);
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+.winnerLabel {
+  width: 300px;
+}
+
+.upgradeButton {
+  box-shadow: 7px -6px 5px 0px rgba(28,26,28,1);
+  margin-right: .5em;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  font-size: .85em;
+  width: 80px;
+}
+
+#failedPurchase {
+  text-shadow: 2px -3px 3px rgb(8, 8, 8);
+  color:red;
+  width: 250px;
+  font-size: 1em;
+}
+
+.buyUpgradeButton {
+  box-shadow: 7px -6px 5px 0px rgba(28,26,28,1);
+  margin-top: 7em;
+  margin-bottom: 1em;
+}
+
+.eraseBackground {
+  box-shadow: 7px -6px 5px 0px rgba(28,26,28,1);
+  background-color: pink;
+  font-size: .7em;
+  margin-left: .2em;
+
+}
+
+.InsideContent{
+  display:inline-block;
+}
+
+.canvasUpgrades {
+  width: 100%;
+  margin: 0px auto -1px auto;
+  
+}
+
+.upgradeContainer {
+  display:inline-block;
+  width: 200px;
+  margin-left: 15%;
+  vertical-align: top;
+}
+
 #gameCanvasContainer {
-  height: 100%;
-  width: 100%;
+  width:600px;
+  display:inline-block;
 }
-html, body {
-  height: 100%;
-  width: 100%;
-  background-color:#1b1f23;
+
+.messages {
+  overflow-y:scroll;
+  overflow:auto;
+  height:375px;
+  width: 300px;
+}
+
+.chatCard {
+  margin-top: 10%;
+  margin-bottom: 1.5em;
+  box-shadow: 14px -9px 5px 0px rgba(23,17,23,1);
+  border-radius: 4%;
+}
+
+.chatContainer {
+  margin-top: 5%;
+  width: 350px;
+  float: right;
+  margin-right:2em;
+  height: 600px;
+}
+
+#registerLink {
+  font-size: 1em;
+  padding: 1em;
+  height: 3em;
+  width: 21em;
+  font-weight: 450;
+  margin-top: .5em;
+}
+
+#signInButton {
+  background-color: #202020;
+  margin-top: .5em;
+}
+
+.signin-container {
+  margin:auto
+}
+
+.form-signin {
+  width: 22%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.signInTitle {
+  text-shadow: 2px -3px 3px rgb(8, 8, 8);
+  margin-top: 3em;
+}
+
+#error-message {
+  margin-top: .5em;
+  color: red;
+}
+
+#registerModelButton {
+  margin-top: .5em;
+}
+
+.registerForm{
+  text-align: left;
+  margin: auto;
+  width: 70%;
+}
+
+.registerFormButton {
+  margin: auto;
+  margin-top: .5em;
+  width: 50%;
+ 
+}
+
+#registerMessage {
+  color: green;
+  font-size: 90%;
+  text-align: center;
+  margin-top: .5em;
+}
+
+#hiddenRegisterButton {
+  visibility: hidden;
+}
+
+/* #inputUsername {
+  
+}
+
+#inputPassword {
+  
+} */
+
+#DrawctopusLogo {
+  /* height: 40%; */
+  width: 95%;
+}
+
+.homeElement {
+  height: 80%;
 }

@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 import { signInReducer } from "./sign-in.reducer";
+import { gameCanvasReducer } from "./game-canvas.reducer";
 
 
 
@@ -8,13 +9,30 @@ export interface ISignInState {
     password: string,
     username: string
   },
-  errorMessage: string
+  errorMessage: string,
+  registrationMessage: string
+}
+
+export interface IGameCanvasState {
+    user: {
+      id: number,
+      password: string,
+      points: number,
+      upgrades: [{
+        userUpgradeId: number,
+        userId: number,
+        upgrade: string
+      }],
+      username: string
+    }
 }
 
 export interface IState {
   signIn: ISignInState,
+  gameCanvas: IGameCanvasState
 }
 
 export const state = combineReducers<IState>({
-  signIn: signInReducer,
+  gameCanvas: gameCanvasReducer,
+  signIn: signInReducer
 })
